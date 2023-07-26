@@ -75,6 +75,8 @@ services:
       - --rpc-host=0.0.0.0
       - --contract-deployment-block=0
       - --grpc-gateway-host=0.0.0.0
+      - --grpc-gateway-corsdomain=http://127.0.0.1:8081,http://localhost:8081,http://localhost:4200,http://localhost:7500,http://127.0.0.1:4200,http://127.0.0.1:7500,http://0.0.0.0:4200,http://0.0.0.0:7500,http://localhost:3000,http://0.0.0.0:3000,http://127.0.0.1:3000
+      - --grpc-gateway-port=3500
       - --execution-endpoint=http://geth:8551
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
